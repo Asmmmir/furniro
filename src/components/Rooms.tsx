@@ -1,7 +1,7 @@
 const Rooms = () => {
     return (
         <div>
-            <div className="xl:container mx-auto flex-col flex items-center justify-center">
+            <div className="xl:container px-5 mx-auto flex-col flex items-center justify-center">
                 <div className="my-12">
                     <h3 className="text-poppins text-[32px] font-bold text-center text-title">Browse The Range</h3>
                     <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

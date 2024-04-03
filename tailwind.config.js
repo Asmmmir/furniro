@@ -13,7 +13,8 @@ export default {
       },
       colors: {
         gold: '#B88E2F',
-        title: '#333333'
+        title: '#333333',
+        description: "#898989"
       },
 
       backgroundImage: {
