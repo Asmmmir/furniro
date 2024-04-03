@@ -16,6 +16,10 @@ export default {
         title: '#333333',
         description: "#898989"
       },
+      gridTemplateColumns: {
+          galerry: 'repeat(auto-fill, minmax(min-content, 1fr))',
+          footer: 'repeat(auto-fill, minmax(300px, 1fr))'
+      },
 
       backgroundImage: {
         'header-hero': "url('/images/header-bg.jpg)"

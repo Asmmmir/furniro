@@ -1,8 +1,10 @@
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Navigation from "./components/Navigation"
 import OurProducts from "./components/OurProducts"
 import RoomSlider from "./components/RoomSlider"
 import Rooms from "./components/Rooms"
+import ShareSetup from "./components/ShareSetup"
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Rooms />
       <OurProducts />
       <RoomSlider />
+      <ShareSetup />
+      <Footer />
     </div>
   )
 

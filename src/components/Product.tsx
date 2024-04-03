@@ -16,28 +16,29 @@ const Product = ({ name, description, price, imageURL, newProduct, discount }: P
 
 
     return (
-        <div className='relative flex flex-col max-w-[285px] max-h-[446px] font-poppins gap-1 bg-[#F4F5F7]' onMouseEnter={() => setIsHovered(true)}
+        <section className='relative flex flex-col max-w-[285px] max-h-[446px] font-poppins gap-1 bg-[#F4F5F7]'
+         onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             <img src={imageURL} alt="" />
             <div className='p-3 flex flex-col gap-1'>
-                <h3 className='font-bold text-title text-[24px]'>{name}</h3>
+                <h3 className='font-bold text-title text-2xl'>{name}</h3>
                 <p className='text-description'>{description}</p>
                 <p className='font-bold'>{formatPrice(Number(price))} тг</p>
             </div>
 
             {isHovered && (
                 <div className='absolute z-10 inset-0 flex flex-col gap-5 justify-center items-center bg-black bg-opacity-40'>
-                    <button className='text-gold font-bold bg-white px-[52px] py-[12px]'>Add to cart</button>
+                    <button className='text-gold font-bold bg-white px-14 py-3'>Add to cart</button>
                     <div className='flex justify-center gap-5 text-white font-bold'>
-                        <button className='inline-flex items-center gap-[4px]'>
+                        <button className='inline-flex items-center gap-1'>
                             <IoShareSocialSharp size='16px' />
                             Share
                         </button>
-                        <button className='inline-flex items-center gap-[4px]'>
+                        <button className='inline-flex items-center gap-1'>
                             <MdCompareArrows size='16px' />
                             Compare
                         </button>
-                        <button className='inline-flex items-center gap-[4px]'>
+                        <button className='inline-flex items-center gap-1'>
                             <MdFavoriteBorder size='16px' />
                             Like
 
@@ -54,7 +55,7 @@ const Product = ({ name, description, price, imageURL, newProduct, discount }: P
                 <div className='absolute flex justify-center items-center bg-red-400 rounded-full w-[48px] h-[48px] text-white right-5 top-5  '>{discount}%</div>
 
             )}
-        </div>
+        </section>
     )
 }
 

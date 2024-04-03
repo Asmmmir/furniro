@@ -1,3 +1,7 @@
+import pic2 from '../../public/images/slider/2.jpg'
+import pic3 from '../../public/images/slider/3.jpg'
+
+
 
 
 export interface ProductItem {
@@ -75,4 +79,18 @@ export const products:ProductItem[] = [
 
     },
 
+]
+
+
+
+export const slideImages = [
+    {
+        imgURL: pic2,
+    },
+    {
+        imgURL: pic3,
+    },
+    {
+        imgURL: pic2,
+    }
 ]
