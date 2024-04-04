@@ -2,6 +2,7 @@ import { FaRegUser } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { MdFavoriteBorder } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navigation = () => {
     return (
@@ -19,7 +20,7 @@ const Navigation = () => {
                         <li className='font-poppins cursor-pointer p-2'>Contact</li>
                     </ul>
                 </div>
-                <div className='max-sm:hidden'>
+                <div className='max-md:hidden '>
                     <ul className='flex gap-3'>
                         <li className='p-2'>
                             <FaRegUser size='28px' />
@@ -33,8 +34,11 @@ const Navigation = () => {
                         <li className='p-2'>
                             <IoCartOutline size='28px' />
                         </li>
-
                     </ul>
+                </div>
+                <div className="md:hidden">
+                <RxHamburgerMenu />
+
                 </div>
             </div>
         </nav>

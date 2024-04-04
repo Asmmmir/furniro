@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col gap-14 max-sm:gap-5'>
                     <h3>Newsletter</h3>
-                    <form className='flex items-center gap-9'>
+                    <form className='flex items-center gap-9 max-sm:flex-col'>
                     <input className='border-b-[1px] border-black focus:outline-none' type="text" placeholder='Enter Your Email Address' />
                     <button className='uppercase font-semibold border-b-[1px] border-black ' type='submit'>Subscribe</button>
                     </form>
